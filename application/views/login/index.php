@@ -40,7 +40,7 @@
 
 				<form action="<?php echo base_url('login/proses'); ?>" method="post">
 					<div class="input-group mb-3">
-						<input type="text" name="username" class="form-control" placeholder="Input yout username">
+						<input type="text" name="username" class="form-control" placeholder="Input your username">
 						<div class="input-group-append">
 							<div class="input-group-text">
 								<span class="fas fa-envelope"></span>
