@@ -28,7 +28,7 @@ class User extends CI_Controller
 			'user'  => $user
 		];
 
-		// memanggil view dengan nama v_user
+		// memanggil view dengan nama index
 		$this->load->view('index', $data);
 	}
 
@@ -173,7 +173,7 @@ class User extends CI_Controller
 		if ($delete) {
 			$this->session->set_flashdata('sukses', 'Data berhasil dihapus');
 
-			redirect($_SERVER['HTTP_REFERER'], 'refresh');
+			redirect($_SERVER['HTTP_REFERER'], 'refresh'); // kembali ke halaman user
 		} else {
 			$this->session->set_flashdata('error', 'Data gagal dihapus');
 
